@@ -1,0 +1,6 @@
+Para iniciar o projeto com o modelo do styled-components, usou-se o comando 
+npx create-next-app --example with-styled-components with-styled-components-app 
+encontrado no github da Vercel:
+https://github.com/vercel/next.js/tree/canary/examples/with-styled-components
+
+

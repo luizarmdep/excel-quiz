@@ -2,3 +2,6 @@
   "presets": ["next/babel"],
   "plugins": [["styled-components", { "ssr": true }]]
 }
+
+
+// Babel ajuda a trabalhar com JavaScript que não existe
