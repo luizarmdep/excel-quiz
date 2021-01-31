@@ -1,9 +1,18 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../src/components/Widget'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
+import React, { useState } from 'react';
+
+//import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
+import db from '../db.json';
+import Widget from '../src/components/Widget';
+import Button from '../src/components/Button';
+import Input from '../src/components/Input';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizContainer from '../src/components/QuizContainer';
 
 
 // const BackgroundImage = styled.div` // JavaScript
@@ -13,33 +22,59 @@ import GitHubCorner from '../src/components/GitHubCorner'
 //   background-position: center;
 // `;
 
-export const QuizContainer = styled.div` // JavaScript
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+// export const QuizContainer = styled.div` // JavaScript
+//   width: 100%;
+//   max-width: 350px;
+//   padding-top: 45px;
+//   margin: auto 10%;
+//   @media screen and (max-width: 500px) {
+//     margin: auto;
+//     padding: 15px;
+//   }
+// `;
 
 export default function Home() {
+  const router = useRouter(); // hooks devem ficar fora do return
+  const [name, setName] = React.useState(''); //useState sempre utiliza uma tupla [var, setVar]
+  // a segunda posição da tupla traz, automaticamente, função do React que altera/define o state
+
   return (
     <QuizBackground backgroundImage={db.bg}> 
+      <Head>
+        <title> Excel Quiz </title>
+      </Head>
       <QuizContainer>
+        <QuizLogo/>
         <Widget>
            <Widget.Header> 
-              <h1> The Legend of Zelda </h1>
+              <h1> Excel também é maneiro! </h1>
             </Widget.Header>
             <Widget.Content> 
-              <p> lorem ipsum dolo... </p>
+              <p> Teste os seus conhecimentos sobre a melhor ferramenta Microsoft! </p>
+              <form onSubmit={ function (event) {
+                event.preventDefault();
+                router.push(`/quiz?name=${name}`);
+              }} 
+              >
+                <Input
+                  name = 'nomeDoUsuario' 
+                  onChange={(event) => {
+                    setName(event.target.value);
+                  }}
+                  placeholder="Me diga seu nome, desafiante!" 
+                  value = {name}
+                />
+                <Button type="submit" disabled={name.length === 0}> 
+                  JOGAR 
+                </Button>
+              </form>
             </Widget.Content>
         </Widget>
         <Widget>
-        <h1> Quizes da Galera </h1>
-
-        <p> lorem ipsum dolo... </p>
+          <Widget.Content>
+            <h1> Quizes da Galera </h1>
+            <p> lorem ipsum dolo... </p>
+          </Widget.Content>
         </Widget>
         <Footer>
 

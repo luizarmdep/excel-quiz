@@ -3,4 +3,23 @@ npx create-next-app --example with-styled-components with-styled-components-app
 encontrado no github da Vercel:
 https://github.com/vercel/next.js/tree/canary/examples/with-styled-components
 
+### LINKS DO PROJETO NA VERCEL
+imersao-react-next-git-main.luizarmdep.vercel.app
+imersao-react-next-green.vercel.app
+imersao-react-next.luizarmdep.vercel.app
 
+
+### DESAFIOS AULA 1 ###
+- OG IMAGE - Meta Tags para permitir que ao compartilhar o site, apareça a foto
+    > next/head
+    https://nextjs.org/docs/api-reference/next/head
+- criar a página do quiz para ser acessada /quiz
+
+### DESAFIOS AULA 3 ###
+- Fazer as alternativas funcionarem - aviso de acertou ou não?
+- Quando o jogo acaba? - quando termina as perguntas? quando erra? 
+
+
+
+# Plugin de estilo de código #
+https://eslint.org/ 
