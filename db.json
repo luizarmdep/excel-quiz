@@ -4,30 +4,58 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media.giphy.com/media/xkmQfH1TB0dLW/giphy.gif",
+        "title": "Em que ano o Excel foi lançado?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "1976",
+          "1987",
+          "1996",
+          "2005"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "image": "https://media.giphy.com/media/bPCwGUF2sKjyE/giphy.gif",
+        "title": "Qual produto da Microsoft o Excel substituiu?",
+        "description": "Agora vamo ver!",
+        "answer": 2,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Lotus 1-2-3",
+           "Clippy",
+           "Multiplan",
+           "Encarta"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/WRQBXSCnEFJIuxktnw/giphy.gif",
+        "title": "Qual ferramenta do Excel resolve equações?",
+        "description": "Essa tá facinha",
+        "answer": 1,
+        "alternatives": [
+           "Bhaskara",
+           "Solver",
+           "Vlookup",
+           "Sort"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/gBW8Qgfaa2ije/giphy.gif",
+        "title": "Como faz pra automatizar tarefas no Excel?",
+        "description": "RPA é o filho moderninho!",
+        "answer": 3,
+        "alternatives": [
+           "ODD",
+           "UMINUS",
+           "PMT",
+           "Macros"
         ]
       }
     ],
     "external": [
-      ""
+      "https://quiz-imersao-react.olucasalves.vercel.app/",
+      "https://bhaskaraquiz.lucas-henrique-lopes-costa.vercel.app/",
+      "https://imersao-next.felipeoliveiracontato.vercel.app/"
     ],
     "theme": {
       "colors": {

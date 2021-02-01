@@ -19,6 +19,8 @@ imersao-react-next.luizarmdep.vercel.app
 - Fazer as alternativas funcionarem - aviso de acertou ou não?
 - Quando o jogo acaba? - quando termina as perguntas? quando erra? 
 
+https://www.framer.com/motion/
+
 
 
 # Plugin de estilo de código #
